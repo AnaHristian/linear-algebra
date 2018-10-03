@@ -1,0 +1,17 @@
+from plane import Plane
+
+plane1 = Plane(normal_vector=['-0.412','3.806','0.728'], constant_term='-3.46')
+plane2 = Plane(normal_vector=['1.03','-9.515','-1.82'], constant_term='8.65')
+print(plane1)
+print(plane1.normal_vector)
+print(plane1.constant_term)
+print('Parallel: ', plane1.is_parallel_to(plane2))
+print('=: ', plane1 == plane2)
+plane1 = Plane(normal_vector=['2.611','5.528','0.283'], constant_term='-3.46')
+plane2 = Plane(normal_vector=['7.715','8.306','5.342'], constant_term='8.65')
+print('Parallel: ', plane1.is_parallel_to(plane2))
+print('=: ', plane1 == plane2)
+plane1 = Plane(normal_vector=['-7.926','8.625','-7.212'], constant_term='-7.952')
+plane2 = Plane(normal_vector=['-2.642','2.875','-2.404'], constant_term='-2.443')
+print('Parallel: ', plane1.is_parallel_to(plane2))
+print('=: ', plane1 == plane2)
